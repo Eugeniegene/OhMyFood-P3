@@ -1,0 +1,41 @@
+.top
+{
+  text-align: center;
+  z-index: 998;
+
+  .location
+  {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    background-color: #ece7e7af;
+    font-weight: 500;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow:inset 3px 10px 15px -8px rgba(168, 165, 165, 0.67);
+  }
+  .advert
+  {
+    background-color: #f5f5f57e;
+    padding:15px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2
+    { 
+      font-size: 24px;
+      text-align: center;
+      padding-left: 28px;
+      padding-right: 28px;
+
+      .ad
+      {
+      padding-bottom: 30px;
+      font-size: 18px;
+      }
+    }
+  }
+}
