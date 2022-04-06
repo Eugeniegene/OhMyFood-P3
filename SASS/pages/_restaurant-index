@@ -2,10 +2,10 @@
 {
   img
   {
-    max-width: 100%;
+    max-width: $size-maximum;
     max-height: 520px;
     height: 200px;
-    width: 100%;
+    width: $size-maximum;
     object-fit: cover;
   }
   .Restname 
@@ -106,7 +106,7 @@
     padding-top: 10px;
     padding-bottom:10px;
     margin-bottom: 10px;
-    border-radius: 15px;
+    border-radius: $border15px;
     transition: padding-right 400ms ease-in-out;
     position: relative;
     cursor: pointer;
@@ -126,7 +126,7 @@
     }
     h5
     {
-      margin: 0;
+      margin: $center-page-auto;
       padding: 0;
       font-size: 18px;
       white-space: nowrap;
@@ -189,7 +189,7 @@
   {
     display: flex;
     align-items: stretch;
-    width:100%;
+    width:$size-maximum;
     flex-wrap: wrap;
     column-gap: 60px;
     justify-content: center;
@@ -204,19 +204,19 @@
 @media screen and (max-width: 936px){
   #entree
   {
-    width:100%;
+    width:$size-maximum;
   }
   #plats
   {
-    width:100%;
+    width:$size-maximum;
     margin:0 auto;
   }
   #desserts
   {
-    width: 100%;
+    width: $size-maximum;
   }
   .entry-card
   {
-    width: 100%;
+    width: $size-maximum;
   }
 }
