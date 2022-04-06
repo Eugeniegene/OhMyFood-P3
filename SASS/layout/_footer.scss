@@ -2,7 +2,7 @@ footer
 {
   background-color: rgb(48, 47, 47);
   padding-top: 20px;
-  &a
+  a
   {
     text-decoration: none;
     color: white;
@@ -13,23 +13,23 @@ footer
       padding: 15px;
       font-size: 18px;
     }
-    &i
+    i
     {
       margin-right: 10px;
       width: 20px;
     }
-    &.links
-    {
-      display: flex;
-      flex-direction: column;
-      padding: 15px;
-      gap: 10px;
-    }
   }
-  @media screen and (min-width:800px){
-    footer
-    {
-      text-align: center;
-    }
+  .links
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+}
+@media screen and (min-width:800px){
+  footer
+  {
+    text-align: center;
   }
 }
