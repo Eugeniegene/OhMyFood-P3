@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: row;
     gap:10px;
-    margin-top: 20px;
+    margin-top: $margin-top-20px;
     align-items: center;
     position: relative;
-    border-radius: 50px;
+    border-radius: $border50px;
     padding-left: 15px;
     transition:1s;
     .number
@@ -39,9 +39,9 @@
       padding-bottom: 25px;
       padding-left: 40px;
       background-color: #f7f7f7ad ;
-      width: 100%;
+      width: $size-maximum;
       gap:20px;
-      border-radius: 20px;
+      border-radius: $border20px;
       font-size: 18px;
       font-weight: 500;
       box-shadow: 0px 4px 14px 4px $shadow-dark-grey;
@@ -50,7 +50,7 @@
       &:hover
       {
         background-color:#c5ace493;
-        border-radius: 20px;
+        border-radius: $border20px;
         .fas 
         {
           color:#9356DC;
@@ -73,7 +73,7 @@
     h2
     {
       display: block;
-      width: 100%;
+      width: $size-maximum;
       padding: 0;
     }
     .func-bloc
@@ -87,7 +87,7 @@
 @media screen and (max-width: 600px){
   .func-bloc
   {
-    width: 100%;
+    width: $size-maximum;
   }
 }
 @media screen and (max-width: 365px) {
