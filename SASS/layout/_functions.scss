@@ -2,17 +2,12 @@
 {
   padding: 20px;
   padding-bottom: 70px;
-  a
+  h2
   {
-    text-decoration: none;
-    color: inherit;
-
-    h2
-    {
     padding-bottom: 10px;
-    }
-    .func-bloc
-    {
+  }
+  .func-bloc
+  {
     display: flex;
     flex-direction: row;
     gap:10px;
@@ -22,24 +17,19 @@
     border-radius: 50px;
     padding-left: 15px;
     transition:1s;
-      &:hover
-      {
-      background-color:#c5ace493;
-      }
-    }
     .number
     {
-    background-color:#9356DC;
-    color: white;
-    font-weight: 500;
-    border-radius: 50%;
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    align-items: center;
-    justify-content: center;
-    margin-left: -10px;
-    display: flex;
+      background-color:#9356DC;
+      color: white;
+      font-weight: 500;
+      border-radius: 50%;
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      align-items: center;
+      justify-content: center;
+      margin-left: -10px;
+      display: flex;
     }
     .bloc
     {
@@ -54,53 +44,57 @@
       border-radius: 20px;
       font-size: 18px;
       font-weight: 500;
-      box-shadow: 0px 4px 14px 4px rgba(0, 0, 0, 0.123);
+      box-shadow: 0px 4px 14px 4px $shadow-dark-grey;
       transition: 1.05s;
       cursor: pointer;
-
+      &:hover
+      {
+        background-color:#c5ace493;
+        border-radius: 20px;
+        .fas 
+        {
+          color:#9356DC;
+        }
+      }
       .fas
       {
         transition: 1.05s;
-        &:hover
-        {
-        color:#9356DC;
-        }
-      }
-      @media screen and (min-width:800px){
-        .functions
-        {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-          justify-content: center;
-          h2
-          {
-            display: block;
-            width: 100%;
-            padding: 0;
-          }
-          .func-bloc
-          {
-            display: flex;
-            flex-direction: row;
-            min-width: 30%;
-          }
-        }
       }  
-      @media screen and (max-width: 600px){
-        .func-bloc
-        {
-          width: 100%;
-        }
-      }
-      @media screen and (max-width: 365px) {
-        .func-bloc 
-        .bloc 
-        .func-name
-        {
-          font-size: 14px;
-        }
-      }
     }
   } 
+}
+@media screen and (min-width:800px){
+  .functions
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    h2
+    {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+    .func-bloc
+    {
+      display: flex;
+      flex-direction: row;
+      min-width: 30%;
+    }
+  }
+}  
+@media screen and (max-width: 600px){
+  .func-bloc
+  {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 365px) {
+  .func-bloc 
+  .bloc 
+  .func-name
+  {
+    font-size: 14px;
+  }
 }
