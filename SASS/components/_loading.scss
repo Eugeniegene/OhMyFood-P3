@@ -1,12 +1,12 @@
 #loading
 {
   background: rgba(255, 255, 255, 0.808);
-  height: 100%;
-  width: 100%;
-  max-width: 1500px;
+  height: $size-maximum;
+  width: $size-maximum;
+  max-width: $max-page;
   position: fixed;
   z-index:100;
-  margin: 0 auto;
+  margin: $center-page-auto;
   margin-top: 15px;
   padding-top: 200px;
   pointer-events:none;
@@ -16,18 +16,18 @@
     display: flex;
     max-width: 500px;
     flex-direction: row;
-    margin: 0 auto;  
+    margin: $center-page-auto;  
     .line 
     {
       display: inline-block;
       width: 35px;
       height: 35px;
-      border-radius: 15px;
+      border-radius: $border15px;
       background-image: linear-gradient(to bottom, #8400b3, #9628bc, #a840c6, #b956cf, #c96bd9, #d17bde, #d98be3, #e19ae8, #e3a9e8, #e5b7e9, #e7c5e9, #e8d3e9);
       margin-top: 200px;
       justify-content: center;
       transition: 1s;
-      margin:0 auto; 
+      margin:$center-page-auto; 
       &:nth-last-child(1) 
       {
         animation: loadinganima .6s .1s linear infinite;
@@ -60,7 +60,7 @@
   .text
   {
     text-align: center;
-    width: 100%;
+    width: $size-maximum;
     font-family: "Shrikhand", cursive;
     font-size: 30px;
     margin-top: 50px;
