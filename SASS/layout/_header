@@ -3,12 +3,12 @@ header
   text-align: center;
   padding:15px;
   background-color: white;
-  &a 
+  a 
   {
     text-decoration: none;
     color: black;
   }
-  &.return
+  .return
   {
     position: absolute;
     margin-top: 5px;
